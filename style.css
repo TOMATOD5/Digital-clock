@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+body {
+    background-color: #061708;
+}
+
+#clock {
+    color: #fff;
+    font-size: 56px;
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'VT323', monospace;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    animation: flicker 1.7s infinite alternate;
+}
+
+@keyframes flicker {
+
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+        text-shadow:
+                0 0 4px #fff,
+                0 0 1px #fff,
+                0 0 1px #fff,
+                0 0 4px #0fa,
+                0 0 8px #0fa,
+                0 0 9px #0fa,
+                0 0 10px #0fa,
+                0 0 15px #0fa;
+    }
+
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+}
+
+
